@@ -1,0 +1,38 @@
+cmake_minimum_required(VERSION 3.16)
+project(GpuMonitor)
+
+set(CMAKE_CXX_STANDARD 17)
+
+# ── Find SDL2 ──────────────────────────────────────────────────────────────
+find_package(SDL2 REQUIRED)
+
+# ── ImGui sources (drop the imgui folder next to CMakeLists.txt) ───────────
+set(IMGUI_DIR ${CMAKE_SOURCE_DIR}/imgui)
+
+set(IMGUI_SOURCES
+    ${IMGUI_DIR}/imgui.cpp
+    ${IMGUI_DIR}/imgui_draw.cpp
+    ${IMGUI_DIR}/imgui_tables.cpp
+    ${IMGUI_DIR}/imgui_widgets.cpp
+    ${IMGUI_DIR}/backends/imgui_impl_sdl2.cpp
+    ${IMGUI_DIR}/backends/imgui_impl_opengl3.cpp
+)
+
+# ── Executable ────────────────────────────────────────────────────────────
+add_executable(GpuMonitor
+    main.cpp
+    guimonitor.cpp
+    ${IMGUI_SOURCES}
+)
+
+target_include_directories(GpuMonitor PRIVATE
+    ${CMAKE_SOURCE_DIR}
+    ${IMGUI_DIR}
+    ${IMGUI_DIR}/backends
+    ${SDL2_INCLUDE_DIRS}
+)
+
+target_link_libraries(GpuMonitor PRIVATE
+    ${SDL2_LIBRARIES}
+    GL          # Linux; replace with opengl32 on Windows
+)
