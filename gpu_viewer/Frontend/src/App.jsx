@@ -15,7 +15,7 @@ function LilBroApp() {
   function coolDown() {
     setHeat(heat - 1);
   }
-
+# 2
   return (
     <div style={{ fontFamily: "Comic Sans MS, Comic Sans, cursive", margin: 42, background: "#f0f5ff", padding: 20, borderRadius: 12 }}>
       <h1>💻 lil bro gpu viewer 😎</h1>
