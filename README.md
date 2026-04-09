@@ -12,7 +12,6 @@ The **Consciousness Monitor** is a C++ graphical user interface (GUI) applicatio
 * **Clean Architecture:** Built using standard Qt object-oriented paradigms, separating the main window logic (`Gui`) from the monitoring component (`GuiMonitor`).
 
 ## Prerequisites
-To build and run this application, you will need:
 * **C++ Compiler:** GCC, Clang, or MSVC (supporting C++11 or higher).
 * **Qt Framework:** Qt 5 or Qt 6 (with the `Widgets` module installed).
 * **Build System:** `qmake` or `CMake`.
