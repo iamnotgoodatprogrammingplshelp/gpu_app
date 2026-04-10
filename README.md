@@ -37,3 +37,5 @@ The **Consciousness Monitor** is a C++ graphical user interface (GUI) applicatio
 4. run the executable:
     ```Bash
     ./ConsciousnessMonitor  # Exact executable name depends on your .pro file
+   
+   anyone who wants to contribute can 
