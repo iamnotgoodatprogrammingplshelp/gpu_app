@@ -1,10 +1,5 @@
 # Consciousness Monitor GUI
 
-
-
-## Overview
-The **Consciousness Monitor** is a C++ graphical user interface (GUI) application built using the Qt framework. It serves as a simulation of human-like internal state monitoring. The application visualizes simulated biological and cognitive processes, including a baseline "heartbeat," autonomous thought generation, energy management, and physiological reactions to sudden external stimuli.
-
 ## Features
 * **Real-Time Vitals Simulation:** Utilizes Qt's event loop and `QTimer` to mimic a biological heartbeat, generating automated internal state logs (e.g., "Consolidating short-term memory...", "Regulating internal temperature...").
 * **Dynamic Stimulus Reaction:** Features an interactive "Apply Stimulus" mechanism. When triggered, the system simulates a stress response: the logging rate increases, the text turns red to indicate urgency, and energy levels deplete rapidly.
