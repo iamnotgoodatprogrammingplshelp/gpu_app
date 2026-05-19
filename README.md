@@ -33,4 +33,3 @@
     ```Bash
     ./ConsciousnessMonitor  # Exact executable name depends on your .pro file
    
-   anyone who wants to contribute can 
